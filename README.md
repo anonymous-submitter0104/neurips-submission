@@ -5,9 +5,9 @@ _A DATASET FOR EQUITABLE MULTILINGUAL LLMS_
 
  ![Dataset Distribution](/readme-resources/token_distribution.png)
 
-Accompanying the Open review Submission [24079_MILA_MULTILINGUAL_INDIC_.pdf](https://github.com/anonymous-submitter0104/iclr-submission/blob/main/24079_MILA_MULTILINGUAL_INDIC_.pdf) 
+Accompanying the Open review Submission [24079_MILA_MULTILINGUAL_INDIC_.pdf](https://github.com/anonymous-submitter0104/neurips-submission/blob/main/24079_MILA_MULTILINGUAL_INDIC_.pdf) 
 
-Long Technical Report Link: [Full Technical Report (version-1) _Final Version Coming Soon!_](https://github.com/anonymous-submitter0104/iclr-submission/blob/main/Data%20Preparation%20Technical%20Report.pdf)
+Long Technical Report Link: [Full Technical Report (version-1) _Final Version Coming Soon!_](https://github.com/anonymous-submitter0104/neurips-submission/blob/main/Data%20Preparation%20Technical%20Report.pdf)
 
 ---
 
@@ -32,19 +32,19 @@ Long Technical Report Link: [Full Technical Report (version-1) _Final Version Co
 
 ## 📂 Repository Overview
 
-This repository contains all resources, scripts, and datasets associated with our ICLR submission. Each major section of the paper has a corresponding folder in this repository, containing **training scripts, ablation study scripts, and detailed READMEs** to ensure **reproducibility**.
+This repository contains all resources, scripts, and datasets associated with our NeurIPS submission. Each major section of the paper has a corresponding folder in this repository, containing **training scripts, ablation study scripts, and detailed READMEs** to ensure **reproducibility**.
 
 ### 🎯 Main Sections
 
-1. [**Data Acquisition**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/data-acquisition) 
-2. [**Data Curation**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/data-curation) 
-3. [**Data Organisation**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/data-organisation) 
-4. [**Indic MMLU**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/indic-mmlu) 
-5. [**OCR Pipeline**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/ocr-pipeline) 
-6. [**ISOB**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/isob) 
-7. [**Translation Pipeline**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/translation-pipeline) 
-8. [**Rewriting & Data Distillation**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/rewriting-data-distillation) 
-9. [**Final Experiment**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/final-experiment) 
+1. [**Data Acquisition**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/data-acquisition) 
+2. [**Data Curation**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/data-curation) 
+3. [**Data Organisation**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/data-organisation) 
+4. [**Indic MMLU**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/indic-mmlu) 
+5. [**OCR Pipeline**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/ocr-pipeline) 
+6. [**ISOB**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/isob) 
+7. [**Translation Pipeline**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/translation-pipeline) 
+8. [**Rewriting & Data Distillation**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/rewriting-data-distillation) 
+9. [**Final Experiment**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/final-experiment) 
 
 ---
 
@@ -55,12 +55,12 @@ For reviewer access, a **representative subset** of the full open-source release
 
 **Available Open Source Subfolders:**
 
-0. [**Open Source Release**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release) – This folder contains all the below folders.
-1. [**Indic MMLU**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/Indic%20MMLU) 
-2. [**Image-Text Pairs**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/image-text-pairs) 
-3. [**Indic Persona Hub**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/indic-personahub) 
-4. [**ISOB-SMALL-HARD**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/isob-small-hard) 
-5. [**Training Corpus**](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/training-corpus) – Representative corpora for model training:
+0. [**Open Source Release**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/opensource-release) – This folder contains all the below folders.
+1. [**Indic MMLU**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/opensource-release/Indic%20MMLU) 
+2. [**Image-Text Pairs**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/opensource-release/image-text-pairs) 
+3. [**Indic Persona Hub**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/opensource-release/indic-personahub) 
+4. [**ISOB-SMALL-HARD**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/opensource-release/isob-small-hard) 
+5. [**Training Corpus**](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/opensource-release/training-corpus) – Representative corpora for model training:
 
    * **Indian English**
    * **Parallel Corpus**
@@ -72,7 +72,7 @@ Each of the above folders contains its own **README** detailing structure, forma
 
 ## Disclaimer
 
-This repository is part of a research effort submitted to ICLR. 
+This repository is part of a research effort submitted to NeurIPS. 
 
 Our objective is to **open-source large-scale Indian multilingual datasets** to strengthen the **open-source AI ecosystem** and promote **data sovereignty within the Indic AI community**.
 

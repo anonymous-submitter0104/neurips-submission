@@ -257,7 +257,7 @@ bash lm-eval-llm.sh /path/to/model_snapshot /benchmark-result-path
 
 The complete benchmark covering **22 Indic languages + English** is available here:  
 
-- [Download Full Benchmark (PARQUET)](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/Indic%20MMLU)
+- [Download Full Benchmark (PARQUET)](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/opensource-release/Indic%20MMLU)
 
 > ⚠️ Please cite this repository if you use the dataset in your research.
 

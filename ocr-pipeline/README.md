@@ -242,7 +242,7 @@ All model interactions are guided by instruction-grade prompts for reproducibili
 
 This is a **representative sample set** of the full dataset, which will be released with **complete metadata annotations** and an **open-source license** upon paper acceptance. This dataset will serve as a valuable resource for advancing **OCR** and **Document-VLM understanding, interpretation, and information extraction models**.
 
-- [Download Image-Text Pairs Dataset (Representative Set)](https://github.com/anonymous-submitter0104/iclr-submission/tree/main/opensource-release/image-text-pairs)
+- [Download Image-Text Pairs Dataset (Representative Set)](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/opensource-release/image-text-pairs)
 
 > ⚠️ Please cite this repository if you use the dataset in your research.
 
@@ -394,7 +394,7 @@ These results show that **OCR preprocessing directly improves model capabilities
 
 ### Validation Loss Comparison
 
-![ocr-pipeline/assets/val-loss-ocr.png](https://github.com/anonymous-submitter0104/iclr-submission/blob/4c0a6bc594ecffba99fb2f1678dfad379360c6bd/ocr-pipeline/assets/val-loss-ocr.png)
+![ocr-pipeline/assets/val-loss-ocr.png](https://github.com/anonymous-submitter0104/neurips-submission/blob/4c0a6bc594ecffba99fb2f1678dfad379360c6bd/ocr-pipeline/assets/val-loss-ocr.png)
 
 
 The postcorrected corpus produces **substantially more stable training dynamics** and **lower final perplexity**, demonstrating the direct impact of OCR quality on model performance.

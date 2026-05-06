@@ -46,7 +46,7 @@ This section describes our **curation pipeline** and the **ablation experiment**
 ## Folder Structure
 
 ```
-iclr-submission/
+neurips-submission/
  ├── data_curation/
  │    ├── curation/
  │    │    ├── cc_curator.py
@@ -173,7 +173,7 @@ The complete set of scripts and codebase required to replicate this experiment w
 
 **Curation Scripts and Codebase**
 
-All scripts are provided under [`iclr-submission/Data_Curation/`](experiments/data_curation/).
+All scripts are provided under [`neurips-submission/Data_Curation/`](experiments/data_curation/).
 
 **Key Components**
 

@@ -1,7 +1,7 @@
 
 ## 📘 Disclaimer
 
-This repository contains **representative samples** of the datasets proposed for **full open-source release** as part of this ICLR submission.
+This repository contains **representative samples** of the datasets proposed for **full open-source release** as part of this NeurIPS submission.
 
 These samples are shared **exclusively for review and reproducibility purposes**, to illustrate the data quality, structure, and design principles underlying the full datasets used in our experiments.
 
