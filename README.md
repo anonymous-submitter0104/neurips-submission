@@ -5,6 +5,8 @@ _A DATASET FOR EQUITABLE MULTILINGUAL LLMS_
 
  ![Dataset Distribution](/readme-resources/compositional_analysis_with_english.png)
 
+[MILA Neurips 2026 Submission](https://openreview.net/forum?id=FFWEtyB72h&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2026%2FEvaluations_and_Datasets_Track%2FAuthors%23your-submissions))
+
 ---
 
 ## Open Source Release
