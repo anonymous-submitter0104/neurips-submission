@@ -3,11 +3,7 @@ _A DATASET FOR EQUITABLE MULTILINGUAL LLMS_
 
 ---
 
- ![Dataset Distribution](/readme-resources/token_distribution.png)
-
-Accompanying the Open review Submission [24079_MILA_MULTILINGUAL_INDIC_.pdf](https://github.com/anonymous-submitter0104/neurips-submission/blob/main/24079_MILA_MULTILINGUAL_INDIC_.pdf) 
-
-Long Technical Report Link: [Full Technical Report (version-1) _Final Version Coming Soon!_](https://github.com/anonymous-submitter0104/neurips-submission/blob/main/Data%20Preparation%20Technical%20Report.pdf)
+ ![Dataset Distribution](/readme-resources/compositional_analysis_with_english.png)
 
 ---
 
@@ -15,7 +11,7 @@ Long Technical Report Link: [Full Technical Report (version-1) _Final Version Co
 
 **We will Open Source the following:**
 
-* **2 Trillion tokens** of high-quality pretraining data across **22 Scheduled Indian Languages**
+* **1 Trillion tokens** of high-quality pretraining data across **22 Scheduled Indian Languages**
 * **300 Million image–text pairs** (spanning Indian languages, enabling Indic OCR and VLM development)
 * **Indic Persona Hub (200 Million Indian virtual personas)**
 * **India-centric parallel translated corpora** across **22 Scheduled Indian Languages**
