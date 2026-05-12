@@ -1,0 +1,293 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "wd": "https://www.wikidata.org/wiki/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "Synthetic-Indic-Multi-Lingual-Dataset-From-IndicPersonaHub",
+  "url": "https://doi.org/10.7910/DVN/ZNCTGR",
+  "creator": [
+    {
+      "@type": "Person",
+      "givenName": "Anonymous",
+      "familyName": "Anonymous",
+      "name": "Anonymous, Anonymous"
+    }
+  ],
+  "description": "The Indic PersonaHub Domain QA Synthetic Corpus is a culturally grounded, large-scale synthetic instruction dataset generated using Indic PersonaHub, a massive India-centric synthetic population designed to reflect the linguistic, cultural, occupational, and cognitive diversity of Indian society. The dataset is intended for training and evaluating large language models on India-specific reasoning, domain expertise, long-form instruction following, and multilingual alignment. Each data sample is anchored to a unique synthetic persona that is explicitly tagged with a domain of expertise (e.g., education, healthcare, agriculture, governance, engineering, traditional knowledge, etc.). Using this domain tag, the dataset generation pipeline follows a persona-consistent two-step process: Persona-Conditioned Question Generation: Each persona is prompted to generate a thought-provoking and domain-relevant question that reflects what someone with that background and expertise would realistically ask. The questions are designed to be non-trivial and often incorporate Indian societal constraints such as local infrastructure, cultural context, policy realities, and region-specific challenges. Persona-Conditioned Long-Form Answering: The same persona then answers its own question with a detailed response of approximately 800–900 words, ensuring consistency with its expertise, lived experience, and sociocultural identity. The responses are structured, reasoning-heavy, and grounded in Indian context, producing high-entropy text suitable for instruction tuning and long-form generation training. The underlying Indic PersonaHub population was constructed using a dual strategy: Text-to-Persona, where LLMs infer personas from Indian web crawls and regional literature to capture long-tail diversity, and Persona-to-Persona, where additional personas are generated through relational expansion to improve representation of undercovered groups such as rural communities, informal workers, and elderly populations. Personas are filtered through demographic taxonomy coverage checks and semantic deduplication to ensure diversity and reduce redundancy. To support multilingual training, generated outputs are passed through a hybrid translation pipeline to produce aligned versions across 22 Indian languages, enabling cross-lingual instruction tuning and culturally consistent multilingual modeling. Quality is enforced using two automated LLM-based evaluators: a Cultural Compliance Judge, which checks alignment with Indian cultural norms and avoids stereotyping, and a Task Relevance Judge, which ensures that the question and answer are meaningful, domain-consistent, and sufficiently detailed. Overall, this dataset provides persona-grounded, domain-specific, long-form question–answer instruction data that is optimized for building culturally aligned and multilingual language models for the Indian context.",
+  "keywords": [
+    "Agricultural Sciences",
+    "Arts and Humanities",
+    "Astronomy and Astrophysics",
+    "Business and Management",
+    "Chemistry",
+    "Computer and Information Science",
+    "Earth and Environmental Sciences",
+    "Engineering",
+    "Law",
+    "Mathematical Sciences",
+    "Medicine, Health and Life Sciences",
+    "Physics",
+    "Social Sciences",
+    "Other"
+  ],
+  "license": "http://creativecommons.org/publicdomain/zero/1.0",
+  "datePublished": "2026-05-07",
+  "dateModified": "2026-05-07",
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "Harvard Dataverse",
+    "url": "https://dataverse.harvard.edu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Harvard Dataverse"
+  },
+  "version": "1.1",
+  "citeAs": "@data{DVN/ZNCTGR_2026,author = {Anonymous, Anonymous},publisher = {Harvard Dataverse},title = {Synthetic-Indic-Multi-Lingual-Dataset-From-IndicPersonaHub},year = {2026},url = {https://doi.org/10.7910/DVN/ZNCTGR}}",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "Assamee_chunk_0_lite.parquet",
+      "name": "Assamee_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "b0f103ba648314dc22fb3e1a62b720cc",
+      "contentSize": "85558136",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837660"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Bengali_chunk_0_lite.parquet",
+      "name": "Bengali_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "d9400766e5e8d62db8995e23adaec049",
+      "contentSize": "85198592",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837653"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Gujarati_chunk_0_lite.parquet",
+      "name": "Gujarati_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "98d62713771e46bf1a6d3c3ff9b90e09",
+      "contentSize": "101895152",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837650"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Hindi_lite.parquet",
+      "name": "Hindi_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "9a74de8077de046cb7f186fab018da98",
+      "contentSize": "103068866",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837659"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Kannada_chunk_0_lite.parquet",
+      "name": "Kannada_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "8b6c37dac90088a34b49ad6a8b8c2159",
+      "contentSize": "88135663",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837654"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Maithili_chunk_0_lite.parquet",
+      "name": "Maithili_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "9606867e5220fd171d6e57c4547f0821",
+      "contentSize": "101002993",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837655"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Malayalam_chunk_0_lite.parquet",
+      "name": "Malayalam_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "ce30fcbdc27cd8f2178ebc4625ab693b",
+      "contentSize": "98241280",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837652"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Marathi_chunk_0_lite.parquet",
+      "name": "Marathi_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "30a1a11b18a28972e3000394247b3733",
+      "contentSize": "86521194",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837651"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Nepali_chunk_0_lite.parquet",
+      "name": "Nepali_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "09d4189d9cd58ab65403b0bf6f3c7aea",
+      "contentSize": "104413427",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837647"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Oriya_chunk_0_lite.parquet",
+      "name": "Oriya_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "f9a5ead9a19c44c996a03e907727812d",
+      "contentSize": "85724010",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837656"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Punjabi_chunk_0_lite.parquet",
+      "name": "Punjabi_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "c3aa6647283ca3dad7fb4609b137177c",
+      "contentSize": "101009266",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837649"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Sanskrit_chunk_0_lite.parquet",
+      "name": "Sanskrit_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "424d6c2bed3eda6b083a6d1ad491cfba",
+      "contentSize": "90792122",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837657"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Sindhi_chunk_0_lite.parquet",
+      "name": "Sindhi_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "569d54eeaa7226fe247601b0bc66d893",
+      "contentSize": "84644624",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837658"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Tamil_chunk_0_lite_lite.parquet",
+      "name": "Tamil_chunk_0_lite_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "5074488ffd88c10915da1c5591d8ff97",
+      "contentSize": "12339218",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837661"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "Telugu_chunk_0_lite.parquet",
+      "name": "Telugu_chunk_0_lite.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "372baa74207c673e45c8d3a33300c135",
+      "contentSize": "86339505",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837648"
+    }
+  ],
+  "rai:dataLimitations": "The Indic PersonaHub Domain QA Synthetic Corpus is a synthetic dataset generated using large language models conditioned on simulated personas. Its construction is grounded in India-specific filtered Common Crawl subsets, supplemented with specialized data obtained through collaborations with Indian local and regional government organizations, from which culturally grounded seed content was derived. Although substantial effort was made to maximize diversity and demographic coverage, the dataset may still not fully capture the complexity, ambiguity, and lived realities of all Indian populations, particularly highly localized dialect communities, marginalized groups, and rapidly evolving socio-political contexts. The corpus spans multiple domains and 22 scheduled Indian languages; however, coverage remains somewhat uneven across regions, professions, and demographic groups due to variation in source availability and generation quality. The dataset is primarily intended for multilingual pre-training (including pre-training and mid-training), supervised fine-tuning, reasoning, cultural alignment and domain specific model tuning. It is not recommended for improving capabilities outside the covered 22 Indian languages, nor for deployment in regions or communities where linguistic and cultural representation falls outside the dataset’s coverage. As a result, cultural understanding and factual coverage may degrade for regions and populations that are weakly represented or absent.",
+  "rai:dataBiases": "The dataset inherits biases from both the underlying India-centric textual sources and the generative language models used in the persona and QA synthesis pipeline. Languages with greater digital presence, urban populations, formally documented professions, and communities with stronger online representation, and India-Mainland are likely to be comparatively overrepresented. In contrast, low-resource dialects, tribal communities, informal labor sectors, and under-digitized cultural practices may remain underrepresented. Targeted augmentation was explicitly used to improve coverage of historically underrepresented regions and communities by generating additional personas for such groups. Generated personas and responses were further filtered using model-based quality control and cultural compliance filters to reduce harmful stereotypes, irrelevant outputs, and obvious cultural inconsistencies. In addition, human review was conducted on sampled portions of the dataset by native or expert speakers covering all 22 Indian languages to assess linguistic naturalness, cultural appropriateness, and domain relevance. Nevertheless, because the generation process is synthetic, the dataset may still reflect residual societal stereotypes, dominant normative assumptions, or cultural biases inherited from pretrained language models and source corpora.",
+  "rai:personalSensitiveInformation": "The dataset contains synthetic representations of several potentially sensitive attributes, including gender, age, socio-economic status, geography, language, culture, occupation, education level, and domain expertise or seniority. No real personally identifiable information (PII) is included. All personas are algorithmically generated and do not correspond to real individuals, and the source pipeline applies both English and multilingual PII-redaction filters to remove accidental personal identifiers from seed material prior to generation. Because the personas are designed to reflect realistic Indian demographic and cultural patterns, generated outputs may in principle contain stereotypical, sensitive, or socially correlated associations. To mitigate this risk, the dataset was additionally filtered using model-based safety, cultural compliance, and quality-control filters designed to identify and remove such cases. As a result, the likelihood of residual sensitive or stereotypical content is expected to be low, though it cannot be eliminated entirely.",
+  "rai:dataUseCases": "The dataset is designed to represent culturally grounded, persona-conditioned instruction following, long-form reasoning, and domain-aware multilingual knowledge generation in the Indian context across a broad range of domains. It is intended for research and development tasks including multilingual pre-training, mid-training, supervised fine-tuning, domain-specific instruction tuning, culturally contextual reasoning, long-context generation, multilingual alignment, and evaluation of India-specific domain expertise. The dataset was curated with explicit emphasis on factual grounding, domain consistency, and culturally contextualized reasoning. As part of downstream validation, four domain-specific models—Indian Agriculture, Indian Ayurveda, Indian Legal, and Indian Finance—were trained using domain-specialized subsets of the persona-conditioned corpus. These models were published and evaluated on domain-relevant benchmarks, where they achieved state-of-the-art performance within their respective domains compared with the baseline and competing models reported in the study. Benchmark details and evaluation results are available in the associated paper: https://arxiv.org/abs/2510.25409.",
+  "rai:dataSocialImpact": "The dataset has the potential to substantially improve the cultural and linguistic inclusivity of large language models for Indian users by strengthening support for underrepresented languages, regional knowledge systems, and diverse socio-economic perspectives. In particular, it provides a pathway toward better multilingual and culturally grounded language technologies for the 22 scheduled Indian languages represented in the corpus. At the same time, synthetic persona generation may unintentionally reproduce social stereotypes, cultural simplifications, or demographic imbalances, which could lead to unfair or misleading downstream model behavior if used without adequate safeguards. To mitigate these risks, the dataset incorporates automated cultural compliance and task-relevance filtering, emphasizes research-oriented use, and is accompanied by clear documentation of limitations, responsible-use guidance.",
+  "rai:hasSyntheticData": true,
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
+      "prov:label": "Fine-Web",
+      "sc:license": "ODC-By"
+    },
+    {
+      "@id": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-2",
+      "prov:label": "FineWeb-2",
+      "sc:license": "ODC-By"
+    },
+    {
+      "@id": "https://huggingface.co/datasets/EssentialAI/essential-web-v1.0",
+      "prov:label": "Essential AI Web 1.0",
+      "sc:license": "ODC-By"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q5227332"
+      },
+      "prov:label": "Data Pre processing stage",
+      "sc:description": "In this stage the Dataset, undergoes various heuristic filters and deduplication stage."
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q1172378"
+      },
+      "prov:label": "Model Based Filtration",
+      "sc:description": "In this stage the dataset undergoes various model based filtration including, Language Filtration, Quality Filtration, Toxicity Filtration, PII Redaction and Decontamination"
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q3306762"
+      },
+      "prov:label": "Human in the loop Evaluation",
+      "sc:description": "The Dataset undergoes extensive human evaluation across multiple dimensions including safety, toxicity, linguistic correctness and grammar for multilingual indian languages by actual domain experts in 22 Indian Languages"
+    }
+  ]
+}

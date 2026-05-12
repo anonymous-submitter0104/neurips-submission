@@ -1,0 +1,159 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "sc:Dataset",
+  "name": "indic-personahub-domain-qa-english",
+  "description": "The Indic PersonaHub Domain QA Corpus (English Only) is a synthetic instruction dataset designed for training and evaluating language models on India-centric domain reasoning and long-form generation. Each sample is generated using a domain-tagged synthetic persona from Indic PersonaHub, representing diverse Indian backgrounds and expertise areas. For every persona, a domain-specific thought-provoking question is generated, and the same persona produces a detailed 800–900 word answer grounded in its expertise and Indian context. The dataset focuses on structured, high-entropy English responses suitable for instruction tuning, reasoning tasks, and culturally grounded model development.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "url": "https://github.com/anonymous-submitter0104/neurips-submission",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "github-repository",
+      "name": "github-repository",
+      "description": "Anonymous NeurIPS submission repository on GitHub containing the Indic PersonaHub training corpus.",
+      "contentUrl": "https://github.com/anonymous-submitter0104/neurips-submission",
+      "encodingFormat": "git+https",
+      "sha256": "main"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "english-corpus-parquet",
+      "name": "english-corpus-parquet",
+      "description": "Parquet file containing a representative sample of the Indian-English training corpus with persona-grounded domain QA pairs.",
+      "containedIn": {
+        "@id": "github-repository"
+      },
+      "contentUrl": "https://github.com/anonymous-submitter0104/neurips-submission/blob/main/opensource-release/training-corpus/indian-english/English_chunk_0_lite.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "main"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "english-qa",
+      "name": "english-qa",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "english-qa/id",
+          "name": "id",
+          "description": "Unique identifier for each synthetic QA record.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "english-corpus-parquet"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "english-qa/text",
+          "name": "text",
+          "description": "LLM-generated text for each persona: a domain-specific thought-provoking question paired with a detailed 800–900 word answer grounded in the persona's expertise and Indian context.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "english-corpus-parquet"
+            },
+            "extract": {
+              "column": "text"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "rai:dataLimitations": "The Indic PersonaHub Domain QA Synthetic Corpus is a synthetic dataset generated using large language models conditioned on simulated personas. Its construction is grounded in India-specific filtered Common Crawl subsets, supplemented with specialized data obtained through collaborations with Indian local and regional government organizations, from which culturally grounded seed content was derived. Although substantial effort was made to maximize diversity and demographic coverage, the dataset may still not fully capture the complexity, ambiguity, and lived realities of all Indian populations, particularly highly localized dialect communities, marginalized groups, and rapidly evolving socio-political contexts. The corpus spans multiple domains; however, coverage remains somewhat uneven across regions, professions, and demographic groups due to variation in source availability and generation quality. The dataset is primarily intended for multilingual pre-training (including pre-training and mid-training), supervised fine-tuning, reasoning, cultural alignment and domain specific model tuning. It is not recommended for improving capabilities for deployment in regions or communities where linguistic and cultural representation falls outside the dataset’s coverage. As a result, cultural understanding and factual coverage may degrade for regions and populations that are weakly represented or absent.",
+  "rai:dataBiases": "The dataset inherits biases from both the underlying India-centric textual sources and the generative language models used in the persona and QA synthesis pipeline. Languages with greater digital presence, urban populations, formally documented professions, and communities with stronger online representation, and India-Mainland are likely to be comparatively overrepresented. In contrast, low-resource dialects, tribal communities, informal labor sectors, and under-digitized cultural practices may remain underrepresented. Targeted augmentation was explicitly used to improve coverage of historically underrepresented regions and communities by generating additional personas for such groups. Generated personas and responses were further filtered using model-based quality control and cultural compliance filters to reduce harmful stereotypes, irrelevant outputs, and obvious cultural inconsistencies. In addition, human review was conducted on sampled portions of the dataset by native or expert speakers covering all 22 Indian languages to assess linguistic naturalness, cultural appropriateness, and domain relevance. Nevertheless, because the generation process is synthetic, the dataset may still reflect residual societal stereotypes, dominant normative assumptions, or cultural biases inherited from pretrained language models and source corpora.",
+  "rai:personalSensitiveInformation": "The dataset contains synthetic representations of several potentially sensitive attributes, including gender, age, socio-economic status, geography, language, culture, occupation, education level, and domain expertise or seniority. No real personally identifiable information (PII) is included. All personas are algorithmically generated and do not correspond to real individuals, and the source pipeline applies both English and multilingual PII-redaction filters to remove accidental personal identifiers from seed material prior to generation. Because the personas are designed to reflect realistic Indian demographic and cultural patterns, generated outputs may in principle contain stereotypical, sensitive, or socially correlated associations. To mitigate this risk, the dataset was additionally filtered using model-based safety, cultural compliance, and quality-control filters designed to identify and remove such cases. As a result, the likelihood of residual sensitive or stereotypical content is expected to be low, though it cannot be eliminated entirely.",
+  "rai:dataUseCases": "The dataset is designed to represent culturally grounded, persona-conditioned instruction following, long-form reasoning, and domain-aware multilingual knowledge generation in the Indian context across a broad range of domains. It is intended for research and development tasks including multilingual pre-training, mid-training, supervised fine-tuning, domain-specific instruction tuning, culturally contextual reasoning, long-context generation, multilingual alignment, and evaluation of India-specific domain expertise. The dataset was curated with explicit emphasis on factual grounding, domain consistency, and culturally contextualized reasoning. As part of downstream validation, four domain-specific models—Indian Agriculture, Indian Ayurveda, Indian Legal, and Indian Finance—were trained using domain-specialized subsets of the persona-conditioned corpus. These models were published and evaluated on domain-relevant benchmarks, where they achieved state-of-the-art performance within their respective domains compared with the baseline and competing models reported in the study. Benchmark details and evaluation results are available in the associated paper: https://arxiv.org/abs/2510.25409.",
+  "rai:dataSocialImpact": "The dataset has the potential to substantially improve the cultural and linguistic inclusivity of large language models for Indian users by strengthening support for underrepresented languages, regional knowledge systems, and diverse socio-economic perspectives. In particular, it provides a pathway toward better multilingual and culturally grounded language technologies for the 22 scheduled Indian languages represented in the corpus. At the same time, synthetic persona generation may unintentionally reproduce social stereotypes, cultural simplifications, or demographic imbalances, which could lead to unfair or misleading downstream model behavior if used without adequate safeguards. To mitigate these risks, the dataset incorporates automated cultural compliance and task-relevance filtering, emphasizes research-oriented use, and is accompanied by clear documentation of limitations, responsible-use guidance.",
+  "rai:hasSyntheticData": true,
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
+      "prov:label": "Fine Web",
+      "sc:license": "ODC-By"
+    },
+    {
+      "@id": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-2",
+      "prov:label": "Fine Web 2",
+      "sc:license": "ODC-By"
+    },
+    {
+      "@id": "https://huggingface.co/datasets/EssentialAI/essential-web-v1.0",
+      "prov:label": "Essential AI Web 1.0",
+      "sc:license": "ODC-By"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q1172378"
+      },
+      "prov:label": "Model based filtration",
+      "sc:description": "Language filtration, Quality filtration, Toxicity filtration, Benchmark Decontamination and Deduplication"
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q3306762"
+      },
+      "prov:label": "Human in the Loop Evaluation",
+      "sc:description": "We evaluated humanely all the generated answers by personas in english via the native speakers and actual local people."
+    }
+  ],
+  "license": "http://creativecommons.org/publicdomain/zero/1.0"
+}

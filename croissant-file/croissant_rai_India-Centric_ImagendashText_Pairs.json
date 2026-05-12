@@ -1,0 +1,210 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "wd": "https://www.wikidata.org/wiki/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "India-Centric Image&ndash;Text Pairs",
+  "url": "https://doi.org/10.7910/DVN/ABVOEF",
+  "creator": [
+    {
+      "@type": "Person",
+      "givenName": "Anonymous",
+      "familyName": "Anonymous",
+      "name": "Anonymous, Anonymous"
+    }
+  ],
+  "description": "Dataset Description: India-Centric Image–Text Pairs Dataset (Representative Sample Release) The India-Centric Image–Text Pairs Dataset is a high-quality multilingual dataset designed to support research and development in Optical Character Recognition (OCR) and Document Vision–Language Models (Document-VLMs). The dataset consists of aligned document images paired with their corresponding OCR transcriptions, enabling training, fine-tuning, and evaluation of multimodal models for document understanding, text recognition, and information extraction. This dataset was created to address the limitation of existing OCR and document-VLM benchmarks, which are often English-dominated and do not adequately represent India’s linguistic, typographic, and script diversity. It includes real-world document samples that capture practical challenges such as mixed scripts, layout variations, font diversity, and scanning artifacts, making it suitable for robust model development. The representative release includes samples from 22 Indian languages: Bengali, Hindi, Kannada, Malayalam, Marathi, Sanskrit, Tamil, and Telugu, etc covering a diverse range of Indian scripts. Each dataset entry contains a document image (cropped region or full page), its clean machine-readable OCR text, and associated metadata such as language, document type, font style, and data source details. The dataset can serve as a foundation for multiple downstream applications including multilingual OCR training, VLM-based OCR fusion, document-level structured extraction, multilingual document comprehension, translation support, and joint layout-text understanding tasks.",
+  "keywords": [
+    "Computer and Information Science",
+    "Engineering",
+    "Other"
+  ],
+  "license": "http://creativecommons.org/publicdomain/zero/1.0",
+  "datePublished": "2026-05-07",
+  "dateModified": "2026-05-07",
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "Harvard Dataverse",
+    "url": "https://dataverse.harvard.edu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Harvard Dataverse"
+  },
+  "version": "1.1",
+  "citeAs": "@data{DVN/ABVOEF_2026,author = {Anonymous, Anonymous},publisher = {Harvard Dataverse},title = {India-Centric Image–Text Pairs},year = {2026},url = {https://doi.org/10.7910/DVN/ABVOEF}}",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "bengali_samples.parquet",
+      "name": "bengali_samples.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "4734a42d9bb2daf17fda47abaaf0c00d",
+      "contentSize": "162609",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837415"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "hindi_samples.parquet",
+      "name": "hindi_samples.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "c681f8a271f272a2afce5e21fcda0123",
+      "contentSize": "182257",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837411"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "kannada_samples.parquet",
+      "name": "kannada_samples.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "449cfa9490dfa208f46a9671bc7927e8",
+      "contentSize": "132050",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837413"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "malayalam_samples.parquet",
+      "name": "malayalam_samples.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "f91ee9c41202044eef973b0c45cbc95a",
+      "contentSize": "181437",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837414"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "marathi_samples.parquet",
+      "name": "marathi_samples.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "f2b7863afbb5daaf0d447767d5dfb305",
+      "contentSize": "154114",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837410"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "sanskrit_samples.parquet",
+      "name": "sanskrit_samples.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "ec5f14ec70f8041a586a2a6e7d575498",
+      "contentSize": "163967",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837412"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "tamil_samples.parquet",
+      "name": "tamil_samples.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "45a86d7b96eb7a8e52ff195e3872122c",
+      "contentSize": "132089",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837408"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "telugu_samples.parquet",
+      "name": "telugu_samples.parquet",
+      "encodingFormat": "application/octet-stream",
+      "md5": "0af926b4426baed4567662635fc01b32",
+      "contentSize": "115512",
+      "description": "",
+      "contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13837409"
+    }
+  ],
+  "rai:dataLimitations": "The India-Centric Image–Text Pairs Dataset is designed to support multilingual OCR and document vision–language research across Indian scripts and real-world document layouts. Although the corpus covers 22 Indian languages and diverse document sources, coverage remains naturally uneven across languages, scripts, document categories, handwriting styles, and acquisition conditions due to differences in data availability and quality. The dataset primarily contains document images paired with OCR transcriptions and therefore does not comprehensively capture all forms of highly degraded scans, rare regional orthographic conventions, highly specialized domain-specific documents, or emerging contemporary document formats. It is intended for research and development of LLM, OCR, document understanding, and multimodal representation learning, but is not recommended as a sole benchmark for safety-critical, legal, financial, or administrative deployment without additional task-specific validation and domain adaptation.",
+  "rai:dataBiases": "The dataset reflects the distribution of available India-centric document sources and therefore inherits structural biases associated with digital accessibility, institutional documentation practices, and source availability. Languages, scripts, and document formats supported by stronger digitization pipelines, broader public availability, and clearer machine-readable layouts are likely to be comparatively better represented, while low-resource scripts, informal handwritten materials, highly localized document conventions, and documents originating from under-digitized communities may remain comparatively underrepresented. Targeted efforts were made to improve coverage of historically underrepresented Indian languages and scripts so as to broaden linguistic diversity across the corpus. OCR transcriptions were generated and curated through quality-control procedures, with human-in-the-loop evaluation performed on sampled subsets; however, residual bias may still remain in the form of uneven representation of layout complexity, typography, scanning quality, and linguistic variation. As a result, models trained on this dataset may generalize more strongly to relatively standardized printed documents than to rare, noisy, or highly localized document settings.",
+  "rai:personalSensitiveInformation": "The dataset may incidentally contain limited sensitive attributes commonly present in real-world documents, including language, geography, culture, institutional context, and in some cases references to occupations, socio-economic indicators, or public-facing document metadata. The dataset is not designed to collect personally identifiable information (PII) as a target attribute, and curation procedures were applied to prioritize document samples appropriate for research use. Where applicable, filtering and review procedures were used to reduce the likelihood of retaining accidental personal identifiers or sensitive contextual content. Nevertheless, because the source material is derived from naturally occurring documents, residual traces of incidental sensitive, contextual, or socially correlated information may remain in isolated instances. As a result, while the likelihood of materially sensitive content is expected to be low, it cannot be eliminated entirely. The dataset is therefore intended for LLM Training, document understanding research and is not recommended for profiling, identity inference, or downstream applications involving sensitive personal decision-making.",
+  "rai:dataUseCases": "The dataset is intended to represent multilingual document text recognition and document understanding phenomena in the Indian context, including script diversity, OCR robustness, layout-aware text extraction, and image-text alignment for document vision–language learning. It is suitable for research and development tasks including LLM Training, multilingual OCR pre-training and fine-tuning, document-VLM training, OCR-text alignment, structured document extraction, multilingual document comprehension, and joint layout-text representation learning. Internal validation has focused on OCR fidelity, transcription consistency, human in the loop evaluation, and multilingual coverage across representative samples of 22 Indian languages. While the dataset is expected to be useful for broader multimodal document research, the data has been put up in to LLM model training and showcasing SOTA results in the MILA transcript.",
+  "rai:dataSocialImpact": "The dataset has the potential to improve the linguistic and script-level inclusivity of LLMs, document AI systems by strengthening support for Indian languages that remain underrepresented in mainstream OCR and document vision benchmarks. This can enable better multilingual access, improved document digitization, and more equitable development of document understanding technologies across diverse Indian language communities. To mitigate these risks, the dataset is released for research-oriented use with accompanying documentation of limitations, expected failure modes, and responsible-use.",
+  "rai:hasSyntheticData": false,
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "https://archive.org/",
+      "prov:label": "Archive.org",
+      "sc:license": "ODC-By"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q5227332"
+      },
+      "prov:label": "OCR Prepprocessing",
+      "sc:description": "VLM Based Judge filters for Image Sensitivity analysis, Autorotation for correct orientation"
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q109719325"
+      },
+      "prov:label": "Automated VLM/OCR Based OCR Parsing",
+      "sc:description": "Model Based OCR Parsing"
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q1172378"
+      },
+      "prov:label": "Quality Filtration",
+      "sc:description": "Model based quality filtration, language filtration, toxicity filtration."
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q3306762"
+      },
+      "prov:label": "Human in the loop Evaluation",
+      "sc:description": "We performed Human in the loop evaluation of the samples as per proposed methodology in the MILA Paper."
+    }
+  ]
+}

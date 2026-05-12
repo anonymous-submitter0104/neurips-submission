@@ -1,0 +1,298 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "arrayShape": "cr:arrayShape",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "containedIn": "cr:containedIn",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataBiases": "cr:dataBiases",
+    "dataCollection": "cr:dataCollection",
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isArray": "cr:isArray",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "personalSensitiveInformation": "cr:personalSensitiveInformation",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "sc:Dataset",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "repo",
+      "name": "repo",
+      "description": "The Hugging Face git repository.",
+      "contentUrl": "https://huggingface.co/datasets/anonymous000023/Curated-Web-Crawl/tree/refs%2Fconvert%2Fparquet",
+      "encodingFormat": "git+https",
+      "sha256": "https://github.com/mlcommons/croissant/issues/80"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-default",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "default/*/*.parquet"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "dataType": "cr:Split",
+      "key": {
+        "@id": "default_splits/split_name"
+      },
+      "@id": "default_splits",
+      "name": "default_splits",
+      "description": "Splits for the default config.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "default_splits/split_name",
+          "dataType": "sc:Text"
+        }
+      ],
+      "data": [
+        {
+          "default_splits/split_name": "train"
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "default",
+      "description": "anonymous000023/Curated-Web-Crawl - 'default' subset",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "default/split",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "fileProperty": "fullpath"
+            },
+            "transform": {
+              "regex": "default/(?:partial-)?(train)/.+parquet$"
+            }
+          },
+          "references": {
+            "field": {
+              "@id": "default_splits/split_name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/fasttext_score",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "fasttext_score"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/language",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "language"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/language_score",
+          "dataType": "cr:Float64",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "language_score"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/text",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "text"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/url",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/nemo_id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "nemo_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/quality_pred",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "quality_pred"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "name": "Curated-Web-Crawl",
+  "description": "anonymous000023/Curated-Web-Crawl dataset hosted on Hugging Face and contributed by the HF Datasets community",
+  "alternateName": [
+    "anonymous000023/Curated-Web-Crawl"
+  ],
+  "creator": {
+    "@type": "Person",
+    "name": "anonymous",
+    "url": "https://huggingface.co/anonymous000023"
+  },
+  "keywords": [
+    "cc-by-sa-4.0",
+    "10K - 100K",
+    "parquet",
+    "Tabular",
+    "Text",
+    "Datasets",
+    "pandas",
+    "Polars",
+    "Croissant",
+    "🇺🇸 Region: US"
+  ],
+  "license": "https://choosealicense.com/licenses/cc-by-sa-4.0/",
+  "url": "https://huggingface.co/datasets/anonymous000023/Curated-Web-Crawl",
+  "rai:dataLimitations": "The curated web crawl is designed as a multilingual pretraining corpus covering all 22 officially recognized Indian languages, with collection focused on improving large-scale language coverage for India-centric language modeling. Although substantial effort was made to maximize linguistic diversity through in-house quality filtering, toxicity filtering, language identification, English quality control, decontamination, and deduplication, web-derived data naturally reflects the uneven availability of digital content across languages, domains, and regions. Consequently, the corpus may provide comparatively stronger coverage for languages and domains with greater web presence, while low-resource dialectal, highly localized, or non-digitized knowledge traditions may remain less represented. The dataset is intended for pretraining and related research use.",
+  "rai:dataBiases": "The corpus inherits structural biases from the publicly available multilingual web ecosystem, including differences in digital participation, publication infrastructure, and online visibility across regions, communities, and subject areas. Languages with broader digital footprints, more standardized orthographies, and stronger formal publishing ecosystems are likely to be comparatively better represented, while low-resource varieties, informal oral traditions, and communities with limited web presence may remain comparatively underrepresented. Targeted filtering and curation were applied to improve overall data quality, reduce harmful content, and strengthen multilingual consistency across all 22 Indian languages; however, as with any large-scale web-derived corpus, residual bias may remain in topical distribution, stylistic register, domain coverage, and cultural representation. As a result, models pretrained on this corpus may generalize more strongly to linguistic patterns and domains that are more prevalent in publicly available web content.",
+  "rai:personalSensitiveInformation": "The dataset is derived from publicly accessible web content and was not constructed to collect personally identifiable information as a target attribute. The curation pipeline applies in-house filtering procedures including quality control, toxicity filtering, language filtering, decontamination, and deduplication, with the goal of prioritizing research-appropriate multilingual text and reducing undesirable or irrelevant content. Nevertheless, because web-scale corpora originate from naturally occurring public sources, incidental traces of contextual or publicly available sensitive information—including geography, language, culture, occupations, institutional references, or other socially contextual attributes—may remain in isolated instances. Accordingly, the corpus is intended for language model pretraining and related research, and is not recommended for profiling, identity inference, or downstream decision-making involving individuals.",
+  "rai:dataUseCases": "The dataset is intended to represent large-scale multilingual linguistic variation, domain diversity, and naturally occurring language use across Indian web ecosystems, with particular emphasis on supporting pretraining for India-centric multilingual language models. It is suitable for multilingual pretraining, mid-training, representation learning, language modeling research, multilingual alignment, and related large-scale corpus studies across the 22 Indian languages covered by the release. Validation for this corpus primarily focuses on curation quality, multilingual coverage, toxicity reduction, language filtering, decontamination, and deduplication, which together aim to provide a cleaner and more reliable pretraining resource than raw web crawl data. Model training performance analysis of this corpus has been showcased in the MILA paper.",
+  "rai:dataSocialImpact": "The dataset has the potential to improve the linguistic inclusivity of large language models by expanding pretraining coverage beyond English-dominant web corpora and strengthening support for all 22 officially recognized Indian languages. This may contribute to better multilingual representation, broader access to language technologies, and stronger downstream performance for Indian-language applications that have historically been underserved by large-scale pretraining resources. At the same time, web-scale corpora can reflect uneven digital representation, dominant social narratives, and residual cultural or topical imbalances, which may propagate into downstream models if used without appropriate safeguards. To mitigate these risks, the corpus has been released as a carefully curated pretraining resource with in-house filtering, decontamination, deduplication, and accompanying documentation describing scope, limitations, and responsible-use considerations.",
+  "rai:hasSyntheticData": false,
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
+      "prov:label": "Fine Web",
+      "sc:license": "ODC-By"
+    },
+    {
+      "@id": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-2",
+      "prov:label": "FineWeb-2",
+      "sc:license": "ODC-By"
+    },
+    {
+      "@id": "https://huggingface.co/datasets/EssentialAI/essential-web-v1.0",
+      "prov:label": "Essential AI Web 1.0",
+      "sc:license": "ODC-By"
+    },
+    {
+      "@id": "https://commoncrawl.org/",
+      "prov:label": "Common Crawl",
+      "sc:license": "CC By 4.0"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q1172378"
+      },
+      "prov:label": "Model based filtration",
+      "sc:description": "Language filtration, Quality filtration, Toxicity filtration, Benchmark Decontamination and Deduplication"
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q3306762"
+      },
+      "prov:label": "Human in the loop Evaluation",
+      "sc:description": "We conducted human evaluation from the crawled, curated data corpus samples"
+    }
+  ]
+}
