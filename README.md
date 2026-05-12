@@ -1,6 +1,7 @@
 # MILA: MULTILINGUAL INDIC LANGUAGE ARCHIVE
 _A DATASET FOR EQUITABLE MULTILINGUAL LLMS_
 
+### Metadata for Opensource Data: [MetaData](croissant-file/)
 ---
 
  ![Dataset Distribution](/readme-resources/compositional_analysis_with_english.png)
