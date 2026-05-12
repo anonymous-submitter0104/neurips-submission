@@ -17,16 +17,17 @@ Croissant is a standardized, machine-readable metadata format for datasets. A si
 Croissant is especially useful for research releases, dataset cards, automated dataset loaders, and reproducibility audits.
 
 ---
+[MILA Neurips 2026 Submission](https://openreview.net/forum?id=FFWEtyB72h&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2026%2FEvaluations_and_Datasets_Track%2FAuthors%23your-submissions))
 
 ## Datasets in this Repository
 
 | File | Dataset | Type |
 |---|---|---|
-| `croissant_rai_Curated-Web-Crawl (1).json` | Curated Web Crawl | Multilingual web text |
-| `croissant_rai_India-Centric_ImagendashText_Pairs.json` | India-Centric Image–Text Pairs | OCR / vision-language |
-| `croissant_rai_indic-persona-hub.json` | Indic PersonaHub | Synthetic persona corpus |
-| `croissant_rai_indic-personahub-domain-qa-english.json` | Indic PersonaHub Domain QA (English) | Synthetic English QA |
-| `croissant_rai_Synthetic-Indic-Multi-Lingual-Dataset-From-IndicPe (1).json` | Synthetic Indic Multi-Lingual Dataset | Multilingual synthetic instructions |
+| `croissant_rai_Curated-Web-Crawl (1).json` | [Curated Web Crawl](https://huggingface.co/datasets/anonymous000023/Curated-Web-Crawl) | Multilingual web text |
+| `croissant_rai_India-Centric_ImagendashText_Pairs.json` | [India-Centric Image–Text Pairs](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/opensource-release/image-text-pairs) | OCR / vision-language |
+| `croissant_rai_indic-persona-hub.json` | [Indic PersonaHub](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/opensource-release/indic-personahub) | Synthetic persona corpus |
+| `croissant_rai_indic-personahub-domain-qa-english.json` | [Indic PersonaHub Domain QA (English)](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/opensource-release/training-corpus/indian-english) | Synthetic English QA |
+| `croissant_rai_Synthetic-Indic-Multi-Lingual-Dataset-From-IndicPe (1).json` | [Synthetic Indic Multi-Lingual Dataset](https://github.com/anonymous-submitter0104/neurips-submission/tree/main/opensource-release/training-corpus/parallel-corpus) | Multilingual synthetic instructions |
 
 ### Curated Web Crawl
 
